@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1bebb11-7495-43e0-99ec-99dd8c962a6e" name="Default Changelist" comment="" />
+    <list default="true" id="e1bebb11-7495-43e0-99ec-99dd8c962a6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serv.php" beforeDir="false" afterPath="$PROJECT_DIR$/serv.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +16,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aIxHxGQBKC8JJvLNd7Y2rmzaTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,6 +51,10 @@
       <workItem from="1586436825785" duration="868000" />
       <workItem from="1586439964108" duration="5132000" />
       <workItem from="1586445147493" duration="480000" />
+      <workItem from="1586446957089" duration="954000" />
+      <workItem from="1586509037892" duration="229000" />
+      <workItem from="1586515603632" duration="45000" />
+      <workItem from="1586515660587" duration="10446000" />
     </task>
     <servers />
   </component>
@@ -70,9 +82,13 @@
       <screen x="0" y="28" width="1280" height="996" />
     </state>
     <state x="129" y="161" width="1022" height="732" key="SettingsEditor/0.28.1280.996@0.28.1280.996" timestamp="1586437256744" />
-    <state x="296" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1586439965519">
+    <state x="296" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1586534949616">
       <screen x="0" y="28" width="1280" height="996" />
     </state>
-    <state x="296" y="353" key="com.intellij.ide.util.TipDialog/0.28.1280.996@0.28.1280.996" timestamp="1586439965519" />
+    <state x="296" y="353" key="com.intellij.ide.util.TipDialog/0.28.1280.996@0.28.1280.996" timestamp="1586534949616" />
+    <state x="303" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1586520926881">
+      <screen x="0" y="28" width="1280" height="996" />
+    </state>
+    <state x="303" y="246" width="672" height="678" key="search.everywhere.popup/0.28.1280.996@0.28.1280.996" timestamp="1586520926881" />
   </component>
 </project>

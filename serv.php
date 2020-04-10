@@ -1,23 +1,33 @@
 <?php
-$i = 1;
+$i = 1;         //Counter variable
+$run = true;
 $address = "0.0.0.0";
 $port = "467";
 $sock = socket_create(AF_INET, SOCK_STREAM, 0) or die("Can't create socket");
 
 socket_bind($sock, $address, $port) or die("Couldn't bind to socket");
 socket_listen($sock) or die("Couldn't listen to socket");
-$accept = socket_accept($sock) or die("Couldn't accept socket");
-$origRead = socket_read($accept,1024) or die("Cannot read from socket");
-socket_write($accept, "egonissi c.g.");
 
- while (true) {
-     $i++;
+
+ while ($run) {
+
      $accept = socket_accept($sock) or die("Couldn't accept socket");
-     $read = socket_read($accept,1024) or die("Cannot read from socket");
-     if ($read == $origRead) {
-         socket_write($accept, $i . PHP_EOL);
+     $read = socket_read($accept,1024, PHP_BINARY_READ) or die("Cannot read from socket");
+
+     str_replace(array("\n\r", "\n", "\r", PHP_EOL), '', $read);            //Replace newline to avoid conflicts
+     $read = preg_replace('/[\x00-\x1F\x7F]/u', '', $read);      //Remove unicode chars
+     echo $read;
+
+     if (strcmp($read, "Mixbot:egoniss432") == 0) {
+         socket_write($accept,"egonissi c.g.");
+     }
+     else if (strcmp($read,"hello version 352") == 0) {
+         socket_write($accept, "hello");
+     }
+     else if (strcmp($read,"keepgoing") == 0) {
+         socket_write($accept, ++$i);
      } else {
-         break;
+         $run = false;
      }
  }
 
