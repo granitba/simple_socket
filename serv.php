@@ -16,16 +16,16 @@ socket_listen($sock) or die("Couldn't listen to socket");
 
      str_replace(array("\n\r", "\n", "\r", PHP_EOL), '', $read);            //Replace newline to avoid conflicts
      $read = preg_replace('/[\x00-\x1F\x7F]/u', '', $read);      //Remove unicode chars
-     echo $read;
+     echo $read . PHP_EOL;
 
      if (strcmp($read, "Mixbot:egoniss432") == 0) {
-         socket_write($accept,"egonissi c.g.");
+         socket_write($accept,"egonissi c.g." . PHP_EOL);
      }
-     else if (strcmp($read,"hello version 352") == 0) {
-         socket_write($accept, "hello");
+     else if (strcmp($read,"hello version 352 user:egoniss432") == 0) {
+         socket_write($accept, "1" . PHP_EOL);
      }
-     else if (strcmp($read,"keepgoing") == 0) {
-         socket_write($accept, ++$i);
+     else if (strcmp($read,"keepgoing egoniss432") == 0) {
+         socket_write($accept, ++$i . PHP_EOL);
      } else {
          $run = false;
      }
