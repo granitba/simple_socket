@@ -1,1 +1,1 @@
-## Very simple php socket script
+## Simple php socket script
