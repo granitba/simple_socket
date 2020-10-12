@@ -22,4 +22,4 @@ Where localhost is the host where the serv.php is running and 3333 is the port u
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/granitba/simple_socket/blob/master/LICENSE.md)
