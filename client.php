@@ -2,10 +2,10 @@
 $address="127.0.0.1";
 $port="3333";
 
-if ($argv[1] !== '') {      // If there is a command line argument set the message to that
+if ($argc > 1) {      // If there is a command line argument set the message to that
     $msg = $argv[1];
 } else {
-    $msg="Hello";           // If not default to "Hello"
+    $msg="Hello";     // If not default to "Hello"
 }
 
 

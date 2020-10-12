@@ -35,7 +35,7 @@ socket_listen($sock) or die("Couldn't listen to socket");
      else if (strcmp($read,"Hello target") == 0) {
          socket_write($accept, "1" . PHP_EOL);
      }
-     else if (strcmp($read,"keepgoing") == 0) {
+     else if (strcmp($read,"Keep going") == 0) {
          socket_write($accept, ++$i . PHP_EOL);
      } else {
          $run = false;
