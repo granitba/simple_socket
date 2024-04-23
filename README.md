@@ -1,6 +1,6 @@
 # Simple socket
 
-This is a very simple php tcp socket script, that listens on a certain port for tcp packets.
+This is a simple php tcp socket script, that listens on a certain port for tcp packets.
 
 ## Usage
 Navigate in to the directory where the project is located and open a terminal, where you will type this:
